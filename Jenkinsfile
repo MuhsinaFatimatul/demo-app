@@ -1,13 +1,7 @@
 pipeline {
-  agent {
-    docker {
-      image 'docker:27-cli'
-      args '-v /var/run/docker.sock:/var/run/docker.sock'
-    }
-  }
+  agent any
 
   stages {
-
     stage('Build Docker Image') {
       steps {
         sh 'docker build -t demo-image:latest .'

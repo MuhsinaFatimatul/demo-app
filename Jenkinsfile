@@ -2,11 +2,6 @@ pipeline {
   agent any
 
   stages {
-    stage('Checkout') {
-      steps {
-        git 'https://github.com/MuhsinaFatimatul/demo-app.git'
-      }
-    }
 
     stage('Build Docker Image') {
       steps {

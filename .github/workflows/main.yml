@@ -6,14 +6,18 @@ name: Deployment
 #       - main
 
 
+# on:
+#   pull_request:
+#     branches:
+#       - main
+
 on:
-  pull_request:
-    branches:
-      - main
+  issues:
+    types: [opened,closed]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
       - name: Print simple statement
-        run : echo "A pull request has been created!"
+        run : echo "An issue has been opened / closed"

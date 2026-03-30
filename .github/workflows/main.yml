@@ -15,9 +15,15 @@ name: Deployment
 #   issues:
 #     types: [opened,closed]
 
+# on:
+#   workflow_dispatch:
+
+
 on:
-  workflow_dispatch:
-    
+  push:
+    paths:
+      - app/**
+      - Jenkinsfile
 
 jobs:
   build:

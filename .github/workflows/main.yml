@@ -1,0 +1,14 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print simple statement
+        run : echo "A mail has been sent to manager!"

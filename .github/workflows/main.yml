@@ -30,4 +30,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Create files
-        run : touch a.txt b.txt c.txt
+        run : echo "Hello Fatima" >> a.txt

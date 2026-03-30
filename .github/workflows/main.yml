@@ -1,9 +1,9 @@
 name: Deployment
 
-# on:
-#   push:
-#     branches:
-#       - main
+on:
+  push:
+    branches:
+      - main
 
 
 # on:
@@ -19,15 +19,15 @@ name: Deployment
 #   workflow_dispatch:
 
 
-on:
-  push:
-    paths:
-      - app/**
-      - Jenkinsfile
+# on:
+#   push:
+#     paths:
+#       - app/**
+#       - Jenkinsfile
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      - name: Print simple statement
-        run : echo "An issue has been opened / closed"
+      - name: Create files
+        run : touch a.txt b.txt c.txt

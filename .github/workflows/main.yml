@@ -11,9 +11,13 @@ name: Deployment
 #     branches:
 #       - main
 
+# on:
+#   issues:
+#     types: [opened,closed]
+
 on:
-  issues:
-    types: [opened,closed]
+  workflow_dispatch:
+    
 
 jobs:
   build:

@@ -1,33 +1,33 @@
-name: Deployment
-
-on:
-  push:
-    branches:
-      - main
-
-
-# on:
-#   pull_request:
-#     branches:
-#       - main
-
-# on:
-#   issues:
-#     types: [opened,closed]
-
-# on:
-#   workflow_dispatch:
-
+# name: Deployment
 
 # on:
 #   push:
-#     paths:
-#       - app/**
-#       - Jenkinsfile
+#     branches:
+#       - main
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps: 
-      - name: Create files
-        run : echo "Hello Fatima" >> a.txt
+
+# # on:
+# #   pull_request:
+# #     branches:
+# #       - main
+
+# # on:
+# #   issues:
+# #     types: [opened,closed]
+
+# # on:
+# #   workflow_dispatch:
+
+
+# # on:
+# #   push:
+# #     paths:
+# #       - app/**
+# #       - Jenkinsfile
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps: 
+#       - name: Create files
+#         run : echo "Hello Fatima" >> a.txt

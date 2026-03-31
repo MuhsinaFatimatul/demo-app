@@ -1,0 +1,20 @@
+name: Github Runners Example
+
+on:
+  push:
+    branches:
+    - main
+
+
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Creating a Folder
+      run: |
+            ssh -i ${{secrets.SSH_KEY}} ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}}
+            mkdir fatima-folder
+           
+      
+

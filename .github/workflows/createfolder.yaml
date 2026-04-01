@@ -9,17 +9,12 @@ on:
 
 jobs:
   job-1:    
-    runs-on: self-hosted
+    runs-on: fatima-runner
     steps:
     - name: Creating a Folder
       run: |
             echo "Creating the folder"
-            mkdir /home/ubuntu/fatima-self-hosted-folder-new
-            echo "Checking current directory"
-            pwd
-            ls
-
-
+            mkdir /home/ubuntu/testing
 
 
 # jobs:

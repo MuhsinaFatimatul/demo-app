@@ -9,7 +9,7 @@ on:
 
 jobs:
   job-1:    
-    runs-on: fatima-runner
+    runs-on: self-hosted
     steps:
     - name: Creating a Folder
       run: |

@@ -8,7 +8,7 @@ on:
 
 jobs:
   job-1:
-    runs-on: third-server-runner
+    runs-on: third-server-runner-new
     steps:
     - name: Creating a Folder
       run: |

@@ -18,7 +18,7 @@ jobs:
             echo "SSH into the server"
             ssh -o StrictHostKeyChecking=no -i "key.pem" ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}}
             echo "Creating the folder"
-            mkdir fatima-folder
+            mkdir /home/ubuntu/fatima-folder
             echo "Checking current directory"
             pwd
            

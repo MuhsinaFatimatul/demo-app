@@ -16,11 +16,16 @@ jobs:
             echo "${{secrets.SSH_KEY}}" >> key.pem
             chmod 400 key.pem
             echo "SSH into the server"
-            ssh -o StrictHostKeyChecking=no -i "key.pem" ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}}
+            ssh -o StrictHostKeyChecking=no -i "key.pem" ${{secrets.SSH_USER}}@${{secrets.SSH_HOST}} "
             echo "Creating the folder"
             mkdir /home/ubuntu/fatima-folder
             echo "Checking current directory"
             pwd
+            ls
+            "
+
+            pwd
+            ls
            
       
 
